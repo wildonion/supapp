@@ -1,0 +1,19 @@
+
+
+[workspace]
+
+members = [
+    "auth",
+    "suproxy",
+]
+
+
+[profile.dev.package.auth]
+opt-level = 0
+[profile.release.package.auth]
+opt-level = 3
+
+[profile.dev.package.suproxy]
+opt-level = 0
+[profile.release.package.suproxy]
+opt-level = 3
